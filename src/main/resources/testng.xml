@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="3">
+
+	<test name="order1">
+		<classes>
+			<class name="com.djose.selenium.automation.test.GoogleHomePageTestFireFox" />
+		</classes>
+	</test>
+	<test name="order2">
+		<classes>
+			<class name="com.djose.selenium.automation.test.GoogleHomePageTestChrome" />
+		</classes>
+	</test>
+
+<!-- 	<test name="order3"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.djose.selenium.automation.test.SampleTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite>
